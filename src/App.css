@@ -9,13 +9,25 @@
 
 .App-header {
   background-color: rgb(56, 77, 104);
-  min-height: 120px;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
+  font-size: 30px;
   color: white;
+}
+
+#EnterDiv {
+  border-style: solid;
+  border-color: gray;
+  background-color: gainsboro;
+  border-width: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
 }
 
 .App-link {
