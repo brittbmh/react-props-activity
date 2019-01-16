@@ -6,7 +6,7 @@ class CurrentTotal extends Component {
             <div>
                 <div id="CurrentDiv">
                     {/* display current number */}
-                    <button>Save</button>
+                    <button id="saveButton" onClick={this.saveNumber}>Save</button>
                 </div>
             </div>
         )
