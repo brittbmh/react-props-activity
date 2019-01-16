@@ -9,8 +9,6 @@ class EnterNumber extends Component {
             number: ''
         }
     }
-    
-    
 
     changeNum = (event) => {
         console.log(event.target.value);
@@ -25,8 +23,6 @@ class EnterNumber extends Component {
         console.log(currentNum);
         this.sendToApp(currentNum);
     }
-
-    
 
     changeDown = (event) => {
         event.preventDefault();

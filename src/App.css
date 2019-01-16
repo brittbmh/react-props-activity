@@ -27,6 +27,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 6px;
 }
 
 #CurrentDiv {
@@ -35,9 +36,10 @@
   background-color: gainsboro;
   border-width: 2px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 6px;
 }
 
 #HistoryDiv {
