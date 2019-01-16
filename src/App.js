@@ -9,16 +9,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      number: 0,
+      total: 0,
       numHist: []
     }
   }
 
   addCurrentNum = (currentNum) => {
     console.log(currentNum);
+    let currentTotal = parseFloat(currentNum.number) + this.state.total;
+    console.log(currentTotal);
+    
     this.setState({
-      number: currentNum
+      total: currentTotal
     })
+    
   }
 
   render() {
@@ -28,7 +32,7 @@ class App extends Component {
         <br />
         <EnterNumber addCurrentNum={this.addCurrentNum}/>
         <br />
-        <CurrentTotal />
+        <CurrentTotal currentTotal={this.state.total}/>
         <br />
         <History />
       </div>

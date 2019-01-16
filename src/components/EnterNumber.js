@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+let currentNum = 0;
 
 class EnterNumber extends Component {
     constructor(props) {
@@ -8,6 +9,8 @@ class EnterNumber extends Component {
             number: 0
         }
     }
+    
+    
 
     changeNum = (event) => {
         console.log(event.target.value);
@@ -18,16 +21,25 @@ class EnterNumber extends Component {
 
     changeUp = (event) => {
         event.preventDefault();
-        const currentNum = {number: this.state.number}
+        currentNum = {number: this.state.number}
         console.log(currentNum);
-        this.props.addCurrentNum(currentNum);
+        this.sendToApp(currentNum);
     }
+
+    
 
     changeDown = (event) => {
         event.preventDefault();
-        const currentNum = {number: this.state.number * -1}
+        currentNum = {number: this.state.number * -1}
         console.log(currentNum);
+        this.sendToApp(currentNum);
+    }
+
+    sendToApp = (currentNum) => {
         this.props.addCurrentNum(currentNum);
+        // this.setState({
+        //     number: 0
+        // })
     }
 
     render() {
