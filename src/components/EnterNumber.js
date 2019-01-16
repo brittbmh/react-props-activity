@@ -6,7 +6,7 @@ class EnterNumber extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            number: 0
+            number: ''
         }
     }
     
@@ -37,9 +37,9 @@ class EnterNumber extends Component {
 
     sendToApp = (currentNum) => {
         this.props.addCurrentNum(currentNum);
-        // this.setState({
-        //     number: 0
-        // })
+        this.setState({
+            number: ''
+        })
     }
 
     render() {
@@ -48,7 +48,7 @@ class EnterNumber extends Component {
                 <br />
                 <div id="EnterDiv">
                     <button id="upButton" onClick={this.changeUp}>Up</button>
-                    <input type="text" onChange={this.changeNum} placeholder="Enter Number" />
+                    <input type="text" onChange={this.changeNum} value={this.state.number} />
                     <button id="downButton" onClick={this.changeDown}>Down</button>
                 </div>
             </div>
