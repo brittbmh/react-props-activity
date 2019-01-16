@@ -40,6 +40,17 @@
   justify-content: center;
 }
 
+#HistoryDiv {
+  border-style: solid;
+  border-color: gray;
+  background-color: gainsboro;
+  border-width: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .App-link {
   color: #61dafb;
 }
