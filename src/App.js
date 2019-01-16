@@ -26,7 +26,12 @@ class App extends Component {
   }
 
   addToHist = () => {
-    console.log(this.state.total);
+    const numToAdd = this.state.total;
+    this.setState({
+      total: 0,
+      numHist: [...this.state.numHist, numToAdd]
+    })
+    
   }
 
   render() {
@@ -38,7 +43,7 @@ class App extends Component {
         <br />
         <CurrentTotal addToHist={this.addToHist} currentTotal={this.state.total}/>
         <br />
-        <History />
+        <History histList={this.state.numHist}/>
       </div>
     );
   }

@@ -6,6 +6,7 @@ class History extends Component {
             <div>
                 <div id="HistoryDiv">
                     <h4>History</h4>
+                    {JSON.stringify(this.props.histList)}
                     {/* display history of numbers */}
                 </div>
             </div>
