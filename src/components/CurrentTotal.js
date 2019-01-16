@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
 class CurrentTotal extends Component {
+    saveNumber = (currentTot) => {
+        this.props.addToHist();
+    }
+
     render() {
         const currentTot = this.props.currentTotal;
         console.log(currentTot);
+
+        
         
         return (
             <div>

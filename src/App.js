@@ -25,6 +25,10 @@ class App extends Component {
     
   }
 
+  addToHist = () => {
+    console.log(this.state.total);
+  }
+
   render() {
     return (
       <div className="App">
@@ -32,7 +36,7 @@ class App extends Component {
         <br />
         <EnterNumber addCurrentNum={this.addCurrentNum}/>
         <br />
-        <CurrentTotal currentTotal={this.state.total}/>
+        <CurrentTotal addToHist={this.addToHist} currentTotal={this.state.total}/>
         <br />
         <History />
       </div>

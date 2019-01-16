@@ -5,7 +5,7 @@ class History extends Component {
         return (
             <div>
                 <div id="HistoryDiv">
-                    <p>Placeholder</p>
+                    <h4>History</h4>
                     {/* display history of numbers */}
                 </div>
             </div>
