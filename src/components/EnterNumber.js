@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 
 class EnterNumber extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             number: 0
         }
@@ -20,13 +20,14 @@ class EnterNumber extends Component {
         event.preventDefault();
         const currentNum = {number: this.state.number}
         console.log(currentNum);
-        
+        this.props.addCurrentNum(currentNum);
     }
 
     changeDown = (event) => {
         event.preventDefault();
         const currentNum = {number: this.state.number * -1}
         console.log(currentNum);
+        this.props.addCurrentNum(currentNum);
     }
 
     render() {
