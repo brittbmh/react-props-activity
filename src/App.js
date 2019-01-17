@@ -39,10 +39,13 @@ class App extends Component {
       <div className="App">
         <Header />
         <br />
+        <p>Enter a number and select either up or down to adjust the displayed number</p>
         <EnterNumber addCurrentNum={this.addCurrentNum}/>
         <br />
+        <p>Once the displayed number is correct, click Save</p>
         <CurrentTotal addToHist={this.addToHist} currentTotal={this.state.total}/>
         <br />
+        <p>Saved Numbers</p>
         <History histList={this.state.numHist}/>
       </div>
     );

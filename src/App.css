@@ -43,6 +43,11 @@
   color: rgb(49, 107, 73)
 }
 
+#historyList {
+  list-style-type: none;
+  font-size: 24px;
+}
+
 #HistoryDiv {
   border-style: solid;
   border-color: gray;
