@@ -45,7 +45,6 @@ class App extends Component {
         <p>Once the displayed number is correct, click Save</p>
         <CurrentTotal addToHist={this.addToHist} currentTotal={this.state.total}/>
         <br />
-        <p>Saved Numbers</p>
         <History histList={this.state.numHist}/>
       </div>
     );

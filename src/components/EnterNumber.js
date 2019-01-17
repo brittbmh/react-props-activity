@@ -44,7 +44,7 @@ class EnterNumber extends Component {
                 <br />
                 <div id="EnterDiv">
                     <button id="upButton" onClick={this.changeUp}>Up</button>
-                    <input type="text" onChange={this.changeNum} value={this.state.number} />
+                    <input type="number" onChange={this.changeNum} value={this.state.number} />
                     <button id="downButton" onClick={this.changeDown}>Down</button>
                 </div>
             </div>
